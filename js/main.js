@@ -77,13 +77,24 @@
 
     // Header carousel
     $(".header-carousel").owlCarousel({
-        autoplay: false,
-        smartSpeed: 1500,
-        items: 1,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
+        // autoplay: false,
+        // smartSpeed: 1500,
+        // items: 1,
+        // dots: false,
+        // loop: true,
+        // nav : true,
+        // navText : [
+        //     '<i class="bi bi-chevron-left"></i>',
+        //     '<i class="bi bi-chevron-right"></i>'
+        // ]
+        autoplay: true,        // 자동 재생 켜기
+        smartSpeed: 1500,      // 슬라이드 넘어가는 속도
+        autoplayTimeout: 3000, // 5초마다 다음 슬라이드로 이동 (5000ms = 5초)
+        items: 1,              // 한 번에 보여줄 아이템 수
+        loop: true,            // 무한 반복
+        nav: true,             // 화살표 보이기
+        dots: false,           // 하단 점 보이기/숨기기
+        navText: [
             '<i class="bi bi-chevron-left"></i>',
             '<i class="bi bi-chevron-right"></i>'
         ]
