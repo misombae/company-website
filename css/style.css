@@ -492,3 +492,29 @@ background-size: cover; */
 /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../img/beable/px/meeting-2284501_1920.jpg) center no-repeat fixed; */
 background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../img/beable/px/businessman-2682712_1920.jpg) center no-repeat fixed;
 }
+
+
+.service-item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-item p {
+    flex-grow: 1; /* 텍스트 양에 상관없이 박스 높이를 통일시킵니다 */
+}
+
+/* 네비게이션 링크 호버 시 하얀색 강조 */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.7); /* 평소에는 약간 투명한 흰색 */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #FFFFFF !important; /* 마우스 올리거나 활성화 시 완전한 흰색 */
+}
+
+/* 스티키 메뉴일 때의 배경색 유지 확인 */
+.sticky-top.bg-primary {
+    background-color: var(--primary) !important;
+}
