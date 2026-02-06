@@ -584,3 +584,34 @@ background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../img
     object-fit: cover;
 }
 
+/* 로고 영역 기본 스타일 (PC 기준) */
+.custom-brand {
+    background: #ffffff;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    padding-right: 80px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.custom-brand img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    padding: 10px 40px;
+}
+
+/* 모바일 및 태블릿 대응 (991px 이하) */
+@media (max-width: 991.98px) {
+    .custom-brand {
+        /* 모바일에서는 사선 각도를 줄이고 오른쪽 여백을 축소하여 공간 확보 */
+        clip-path: polygon(0 0, 100% 0, 92% 100%, 0% 100%); 
+        padding-right: 40px; 
+        height: 60px; /* 모바일에서는 네비바 높이를 살짝 줄이는 것이 예쁩니다 */
+    }
+    
+    .custom-brand img {
+        padding: 8px 20px; /* 로고 주변 여백도 스마트폰에 맞게 축소 */
+    }
+}
